@@ -1,4 +1,5 @@
 baseURL: https://example.com/
+publishDir: docs
 languageCode: en
 title: Initio - Free, multipurpose html5 template by GetTemplate
 theme: hugo-initio
