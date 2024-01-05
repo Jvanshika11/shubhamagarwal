@@ -1,0 +1,53 @@
+{{ define "main" }}
+  <main id="main">
+    <div class="container">
+      <div class="row topspace">
+        <!-- Sidebar -->
+        <aside class="col-sm-3 sidebar sidebar-right">
+          <div class="nav text-right nav-side">
+            {{ range where .Site.Pages "Params.filterParam" "about-section" }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </div>
+        </aside>
+        <!-- /Sidebar -->
+        
+        <!-- Article main content -->
+        <article class="col-sm-9 maincontent">
+          <div class="row">
+            <div class="col-sm-4" style="text-align:center;">
+              <img style="max-height: 100px;" src="{{ .Site.BaseURL }}{{ index .Params "image1" }}" alt="">
+              <p style="margin-bottom: 0px; text-align: center;">{{ index .Params "content1" }}</p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/EAMWH3KRUA78"> View Certificate </a>
+            </div>
+            <div class="col-sm-4" style="text-align:center;">
+              <img style="max-height: 100px;" src="{{ .Site.BaseURL }}{{ index .Params "image2" }}" alt="">
+              <p style="margin-bottom: 0px; text-align: center;">{{ index .Params "content2" }}</p>
+              <a href="https://courses.cognitiveclass.ai/certificates/ca02af41fbcc41a686732301d9a56771"> View Certificate </a>
+            </div>
+            <div class="col-sm-4" style="text-align:center;">
+              <img style="max-height: 100px;" src="{{ .Site.BaseURL }}{{ index .Params "image3" }}" alt="">
+              <p style="margin-bottom: 0px; text-align: center;">{{ index .Params "content3" }}</p>
+              <a href="https://www.datacamp.com/statement-of-accomplishment/course/84110d8571e529472d5cd3dd4f6cf463d129b1aa"> View Certificate </a>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-4" style="text-align:center;">
+              <img style="max-height: 100px;" src="{{ .Site.BaseURL }}{{ index .Params "image4" }}" alt="">
+              <p style="margin-bottom: 0px; text-align: center; ">{{ index .Params "content4" }}</p>
+              <a href="https://courses.cognitiveclass.ai/certificates/c792caba158d456db3e235ce28f37a04" > View Certificate </a>
+            </div>
+            <div class="col-sm-4" style="text-align:center;">
+              <img style="max-height: 100px;" src="{{ .Site.BaseURL }}{{ index .Params "image5" }}" alt="">
+              <p style="margin-bottom: 0px; text-align: center;">{{ index .Params "content5" }}</p>
+              <a href="https://courses.edx.org/certificates/2af4a42ff454401ab944132a7ddbaf13" > View Certificate </a>
+            </div>
+          </div>
+          <br/>
+          {{ .Content }}
+        </article>
+        <!-- /Article -->
+      </div>
+    </div> <!-- /container -->
+  </main>
+{{ end }}

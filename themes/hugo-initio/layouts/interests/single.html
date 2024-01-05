@@ -1,0 +1,57 @@
+{{ define "main" }}
+  <main id="main">
+    <div class="container">
+      <div class="row topspace">
+        <!-- Sidebar -->
+        <aside class="col-sm-3 sidebar sidebar-right">
+          <div class="nav text-right nav-side">
+            {{ range where .Site.Pages "Params.filterParam" "about-section" }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </div>
+        </aside>
+        <!-- /Sidebar -->
+        
+        <!-- Article main content -->
+        <article class="col-sm-9 maincontent">
+          <div class="row" style="text-align:center;">
+            <div class="col-sm-4">
+              <img style="max-height:50px;"src="{{ .Site.BaseURL }}{{ index .Params "image1" }}" alt="{{ index .Params "imageAltText1" }}">
+              <h5>{{ index .Params "heading1" }}</h5>
+              <p style="margin-bottom: 0px; font-size:13px;">{{ index .Params "content1" }}</p>
+            </div>
+            <div class="col-sm-4">
+              <img style="max-height:50px;"src="{{ .Site.BaseURL }}{{ index .Params "image2" }}" alt="">
+              <h5>{{ index .Params "heading2" }}</h5>
+              <p style="margin-bottom: 0px; font-size:13px;">{{ index .Params "content2" }}</p>
+            </div>
+            <div class="col-sm-4">
+              <img style="max-height:50px;"src="{{ .Site.BaseURL }}{{ index .Params "image3" }}" alt="">
+              <h5>{{ index .Params "heading3" }}</h5>
+              <p style="margin-bottom: 0px; font-size:13px;">{{ index .Params "content3" }}</p>
+            </div>
+          </div>
+          <br/>
+           <div class="row" style="text-align:center;">
+            <div class="col-sm-4">
+              <img style="max-height:50px;"src="{{ .Site.BaseURL }}{{ index .Params "image4" }}" alt="">
+              <h5>{{ index .Params "heading4" }}</h5>
+              <p style="margin-bottom: 0px; font-size:13px;">{{ index .Params "content4" }}</p>
+            </div>
+            <div class="col-sm-4">
+              <img style="max-height:50px;"src="{{ .Site.BaseURL }}{{ index .Params "image5" }}" alt="">
+              <h5>{{ index .Params "heading5" }}</h5>
+              <p style="margin-bottom: 0px; font-size:13px;">{{ index .Params "content5" }}</p>
+            </div>
+            <div class="col-sm-4">
+              <img style="max-height:50px;"src="{{ .Site.BaseURL }}{{ index .Params "image6" }}" alt="">
+              <h5>{{ index .Params "heading6" }}</h5>
+              <p style="margin-bottom: 0px; font-size:13px;">{{ index .Params "content6" }}</p>
+            </div>
+          </div>
+        </article>
+        <!-- /Article -->
+      </div>
+    </div> <!-- /container -->
+  </main>
+{{ end }}

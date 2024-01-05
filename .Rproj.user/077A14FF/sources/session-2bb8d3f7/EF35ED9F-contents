@@ -1,0 +1,26 @@
+
+<div class="row" style="display: flex;">
+    {{ range where .Site.Pages "Params.filterParam" "services-section1" }}
+      <div class="col-sm-6 col-md-4" style="border: solid 0.5px darkgrey;">
+        <div style="height: 200px;">
+        <h5 class="text-center">{{ .Title }} </h5>
+        <p>{{ .Content }}</p>
+        </div>
+        <p class="text-center"><a href="/contact" class="btn btn-action">Contact me</a></p>
+      </div>
+    {{ end }}
+</div>
+
+<div class="row" style="display: flex;">
+    {{ range where .Site.Pages "Params.filterParam" "services-section2" }}
+      <div class="col-sm-6 col-md-4" style="border: solid 0.5px darkgrey;">
+        <div style="height: 160px;">
+        <h5 class="text-center">{{ .Title }} </h5>
+        <p>{{ .Content }}</p>
+        </div>
+        <p class="text-center"><a href="/contact" class="btn btn-action">Contact me</a></p>
+      </div>
+    {{ end }}
+</div>
+<br/>
+

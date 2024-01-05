@@ -1,0 +1,142 @@
+{{ define "main" }}
+  <main id="main">
+    <div id="head" class="parallax" 
+    data-parallax-speed="2" 
+    style="background-image:url('/images/ds.jpeg'); height: 200px;">
+    </div>
+  	<div class="container" >
+  
+  		<div class="row topspace" >
+          
+  			<div class="tabs" 
+  			style="justify-content: center; align-items: center; margin-bottom:5px;">
+          <button class="tablinks active" id ="tablinks" 
+          onclick="openTab(event, 'company1')">Amazon</button>
+          <button class="tablinks" id ="tablinks"
+          onclick="openTab(event, 'company2')">Vestaire Collective</button>
+          <button class="tablinks" id ="tablinks"
+          onclick="openTab(event, 'company3')">Bain & Company</button>
+          <button class="tablinks" id ="tablinks"
+          onclick="openTab(event, 'company4')">ZS</button>
+          <button class="tablinks" id ="tablinks"
+          onclick="openTab(event, 'company5')">Audertec Solutions</button>
+          <button class="tablinks" id ="tablinks"
+          onclick="openTab(event, 'company6')">Defence Research & Development Organisation (DRDO)</button>
+          <button class="tablinks" id ="tablinks"
+          onclick="openTab(event, 'company7')">National University of Singapore (NUS)</button>
+        </div>
+
+        <div id="company1" class="tabcontent active">
+          <div class="col-sm-4" style="padding-left: 0px; display: flex; align-items: center;">
+            <img src="\images\amazon.jpg" alt="Testimonial Image 4">
+          </div>
+          <div class="col-sm-8">
+          <h3>Business Intelligence Engineer Intern</h3>
+          <h6 class="text-muted">
+            <em>July 2023 - Dec 2023 (6 months)</em></h6>
+          <p class="text-muted">Location: Luxembourg, Luxembourg</p>
+          <p>As a proactive Business Intelligence Engineer at Amazon, I enhanced the Industrial Labor & Financial Planning by crafting an automated outlier identification algorithm. This innovative solution optimized S&OP planning, reclaiming 50+ weekly hours and curbing avoidable costs by €2M.
+<br/>
+My strategic enhancements to the reactive forecasting model elevated accuracy by an impressive 15%, pinpointing and resolving critical bugs. This experience fortified my prowess in Supply Chain Optimization, Statistical Analysis, SQL, ETL, Python, Management Consulting, and Problem Solving.
+<br/>
+My track record of driving impactful optimizations here underscores my commitment to innovative problem-solving and data-driven excellence.</p>
+        </div>
+        </div>
+        <br/>
+        
+        <div id="company2" class="tabcontent">
+          <div class="col-sm-4" style="padding-left: 0px; display: flex; align-items: center;">
+            <img src="\images\vestaire.jpg" alt="Testimonial Image 4">
+          </div>
+          <div class="col-sm-8">
+          <h3>Corporate Research Assistant</h3>
+          <h6 class="text-muted">
+            <em>Jan 2023 - Jun 2023 (6 months)</em></h6>
+          <p class="text-muted">Location: Paris, France</p>
+          <p>My journey at Vestiare Collective equipped me with a profound understanding of the second-hand luxury goods market. I consistently applied data-driven methodologies to collaborate across departments, ensuring the seamless execution of marketing initiatives. 
+          <br/>
+          As a pivotal member of the team, I served as a catalyst in providing data science solutions. My role involved orchestrating targeted voucher marketing campaigns, leveraging advanced analytics and predictive modeling on customer data. Collaborating seamlessly across functions, I orchestrated the implementation of a Customer Lifetime Value (CLTV) model<br/>
+          This strategic approach led to an impressive 12% improvement in retention rates and a substantial 20% increase in customer engagement, resulting in a remarkable 15% expansion in market share and contributing to approximately €1M in revenue growth.
+          <br/>
+          My proficiency spans across Business Analysis, Team Leadership, Project Management, Problem Solving, and Machine Learning, solidifying my ability to drive strategic business outcomes through data-driven innovations.</p>
+        </div>
+        </div>
+        <br/>
+        
+        <div id="company3" class="tabcontent active">
+          <div class="col-sm-4" style="padding-left: 0px; display: flex; align-items: center;">
+            <img src="\images\bain.jpg" alt="Testimonial Image 4">
+          </div>
+          <div class="col-sm-8">
+          <h3>Senior Associate</h3>
+          <h6 class="text-muted">
+            <em>Mar 2022 - Jun 2022 (4 months)</em></h6>
+          <p class="text-muted">Location: New Delhi, India</p>
+          <p></p>
+        </div>
+        </div>
+        <br/>
+        
+        <div id="company4" class="tabcontent active">
+          <div class="col-sm-4" style="padding-left: 0px; display: flex; align-items: center;">
+            <img src="\images\zs.png" alt="Testimonial Image 4">
+          </div>
+          <div class="col-sm-8">
+          <h3>Decision Analytics Associate</h3>
+          <h6 class="text-muted">
+            <em>Dec 2019 - Mar 2022 (2 years, 4 months)</em></h6>
+          <p class="text-muted">Location: Gurgaon, India</p>
+          <p></p>
+        </div>
+        </div>
+        <br/>
+        
+        <div id="company5" class="tabcontent active">
+          <div class="col-sm-4" style="padding-left: 0px; display: flex; align-items: center;">
+            <img src="\images\audertec.jpg" alt="Testimonial Image 4">
+          </div>
+          <div class="col-sm-8">
+          <h3>Senior Associate</h3>
+          <h6 class="text-muted">
+            <em>Jun 2019 - Sep 2019 (4 months)</em></h6>
+          <p class="text-muted">Location: Chandigarh, India</p>
+          <p></p>
+        </div>
+        </div>
+        <br/>
+        <div id="company6" class="tabcontent active">
+          <div class="col-sm-4" style="padding-left: 0px; display: flex; align-items: center;">
+            <img src="\images\drdo.jpg" alt="Testimonial Image 4">
+          </div>
+          <div class="col-sm-8">
+          <h3>Research Assistant</h3>
+          <h6 class="text-muted">
+            <em>May 2018 - Jun 2018 (2 months)</em></h6>
+          <p class="text-muted">Location: Dehradun, India</p>
+          <p></p>
+        </div>
+        </div>
+        <br/>
+        <div id="company7" class="tabcontent active">
+          <div class="col-sm-4" style="padding-left: 0px; display: flex; align-items: center;">
+            <img src="\images\nus.jpg" alt="Testimonial Image 4">
+          </div>
+          <div class="col-sm-8">
+          <h3>Student Research Intern</h3>
+          <h6 class="text-muted">
+            <em>Jan 2018 - May 2018 (5 months)</em></h6>
+          <p class="text-muted">Location: Singapore, Singapore</p>
+          <p></p>
+        </div>
+        </div>
+        <br/>
+  		</div>
+  	</div>	<!-- /container -->
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("company1").style.display = "block";
+  });
+</script>
+  </main>
+{{ end }}

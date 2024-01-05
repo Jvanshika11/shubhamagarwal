@@ -1,0 +1,158 @@
+{{ define "main" }}
+  <main id="main">
+  
+  	<div class="container">
+  
+  		<div class="row topspace">
+  
+  			<!-- Sidebar -->
+  			<aside class="col-sm-4 sidebar sidebar-right">
+  					<h4 style="text-align: center; padding: 10px; 
+  					color: darkgray; border: solid 0.5px black; ">SKILLS</h4>
+  					<div class="icon-container">
+    <div class="icon">
+      <img src="\images\icons\python.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\R.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\SQL.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\gcp2.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\TF.png" alt="">
+      
+    </div>
+    </div>
+      <div class="icon-container">
+      <div class="icon">
+      <img src="\images\icons\pandas.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\numpy.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\opencv.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\scikit.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\seaborn.png" alt="">
+      
+    </div>
+    </div>
+  <div class="icon-container">
+    <div class="icon">
+      <img src="\images\icons\powerbi.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\tab.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\panel.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\bookeh.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\matlab.png" alt="">
+    </div>
+    </div>
+    <div class="icon-container">
+    <div class="icon">
+      <img src="\images\icons\aws.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\s3.png" alt="">
+      
+      <div class="icon">
+      <img src="\images\icons\quicksight.png" alt="">
+      
+  </div>
+    </div>
+    <div class="icon">
+      <img src="\images\icons\azure.png" alt="">
+      
+  </div>
+  				</div>
+    <div class="icon-container">
+      <div class="icon">
+      <img src="\images\icons\altair.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\alteryx.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\daitku.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\jupyter.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\snowflake.png" alt="">
+      
+    </div>
+    </div>
+    
+    <div class="icon-container">
+      <div class="icon">
+      <img src="\images\icons\excel.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\git.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\jira.png" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\vs.webp" alt="">
+      
+    </div>
+    <div class="icon">
+      <img src="\images\icons\spark.png" alt="">
+      
+    </div>
+    </div>
+  			</aside>
+  			<!-- /Sidebar -->
+  
+  			<!-- Article main content -->
+  			<article class="col-sm-8 maincontent">
+  			  <div class="row">
+  			  <h4 style="text-align: center; padding: 10px; 
+  					color: darkgray; border: solid 0.5px black; ">SERVICES</h4>
+  					</div>
+                  {{partial "partials/home/services.html" .}}
+  			</article>
+  			<!-- /Article -->
+  
+  
+  		</div>
+  	</div>	<!-- /container -->
+  
+  </main>
+{{ end }}

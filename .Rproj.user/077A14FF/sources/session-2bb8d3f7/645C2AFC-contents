@@ -1,0 +1,55 @@
+{{ define "main" }}
+  <main id="main">
+  
+  	<div class="container">
+  
+  		<div class="row topspace">
+  
+  			<!-- Sidebar -->
+  			<aside class="col-sm-4 sidebar sidebar-right">
+  
+  				<div class="nav text-right nav-side">
+  					<img src="{{ .Site.BaseURL }}{{ index .Params "image1" }}" alt="{{ index .Params "imageAltText1" }}">
+  				</div>
+  
+  			</aside>
+  			<!-- /Sidebar -->
+  
+  			<!-- Article main content -->
+  			<article class="col-sm-8 maincontent">
+                  <h3 class="widget-title">{{ i18n "footer_contact_title" }}</h3>
+				<div class="widget-body">
+					<p>{{ if .Site.Params.phone }}<p style="margin-bottom:0px;"><i class="fab fa-whatsapp fa-3x" style="color: green;"></i> </p> {{ .Site.Params.phone }}<br>{{ end }}
+					<br/>
+					{{ if .Site.Params.email }} 
+					<p style="margin-bottom:0px;">
+					  <i class="fas fa-envelope-square fa-3x" 
+					  style="color: skyblue;"></i> 
+					  </p>
+					  <a href="mailto:{{ .Site.Params.email }}">
+					    {{ .Site.Params.email }}</a>
+					  <br>
+					{{ end }}
+					</p>
+					
+					{{ range .Site.Params.social }}
+							{{ if eq .title "linkedin"}}
+								<p style="margin-bottom:0px;">
+								  <a href="{{ .url }}" target="_blank">
+								    <i class="{{ .icon }} fa-3x" 
+								    style="color: #0077B5;"> </i>
+								    </a>	
+								    </p>
+								<p>shubham-agarwal777</p>
+							{{ end }}
+            {{ end }}
+
+  			</article>
+  			<!-- /Article -->
+  
+  
+  		</div>
+  	</div>	<!-- /container -->
+  
+  </main>
+{{ end }}

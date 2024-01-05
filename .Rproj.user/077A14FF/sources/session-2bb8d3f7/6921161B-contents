@@ -1,0 +1,69 @@
+{{ define "main" }}
+  <main id="main">
+  
+        <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="testimonial">
+        <div class="image">
+          <img src="\images\testimonial1.jpg" alt="Testimonial Image 1" style="border-radius:50%">
+        </div>
+        <div class="content">
+          <h3>Chirag Kansal</h3>
+          <h6>Data Analytics & Strategy | Innovation & Technology Transformation Leader | Agile Coach | Bain | Ex-BCG | Ex-ZS</h6>
+          <p><em>"I worked with Shubham as his manager at Bain and during this time. He provided great leverage to the team in crunched situations and designed meticulous solutions to convoluted client problem statements. He has commendable analytical and technical skills.
+<br/>
+Shubham is an accountable team player who thrives in high-pressure environments and can meet deadlines. He has all the qualities a management consulting company looks for in their employees—a fine combination of analytical and logical reasoning and striking creativity."</em></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this structure for each testimonial -->
+    <div class="swiper-slide">
+      <div class="testimonial">
+        <div class="image">
+          <img src="\images\testimonial2.jpg" alt="Testimonial Image 2" style="border-radius:50%">
+        </div>
+        <div class="content">
+          <h3>Nihar Ullal</h3>
+          <h6>Associate Product Manager, Pyxis at Bain & CompanyAssociate Product Manager, Pyxis at Bain & Company</h6>
+          <p><em>"I got to work with Shubham on a project over the last couple of months. Shubham was very diligent in his work and consistently raised proactive questions and issues. He will do well in any role because of his communication skills and work ethic!"</em></p>
+        </div>
+      </div>
+    </div>
+        <div class="swiper-slide">
+      <div class="testimonial">
+        <div class="image">
+          <img src="\images\testimonial4.jpg" alt="Testimonial Image 4" style = "border-radius: 50%;">
+        </div>
+        <div class="content">
+          <h3>Jason Walsh</h3>
+          <h6>Director, Hospital Commercial AnalyticsDirector, Hospital Commercial Analytics</h6>
+          <p><em>"I’ve had the pleasure of working with Shubham on several complex projects over the last couple of years and he’s always been phenomenal to work with. He is very thorough, responsive, and brings a great attitude to the table. The work he has done in analytics, dashboarding and automation has been invaluable to my team and our efforts to simplify processes and accomplish our goals."</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="testimonial">
+        <div class="content" style="margin-left: 50px;">
+          <h3>Michelle Ziesemer</h3>
+          <h6>Director, Global mRNA Commercial EffectivenessDirector, Global mRNA Commercial Effectiveness</h6>
+          <p><em>"Shubham worked on many projects that focused on modeling, analytics, and data management. He never missed a deadline, was easy to work with, and could implement all feedback/updates/changes quickly. I highly recommend Shubham for any analytical work."</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+  		
+  
+  </main>
+  <script>
+  const swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+{{ end }}
